@@ -10,6 +10,10 @@
  * Full contributor list: https://github.com/mysensors/Arduino/graphs/contributors
  *
  * Documentation: http://www.mysensors.org
+ *
+ * REVISION HISTORY
+ * Version 1.0 - Created by greengo
+ 
  * Support Forum: http://devicter.blogspot.ru/
  *
  * This program is free software; you can redistribute it and/or
@@ -22,7 +26,7 @@
  * The ArduinoGateway prints data received from sensors on the serial link. 
  * The gateway accepts input on seral which will be sent out on radio network.
  *
- * The GW code is designed for Raspberry PI nFR24 Add-on 328p / 16MHz
+ * The SGW code is designed for Raspberry PI nFR24 Add-on 328p / 16MHz
  *
  * Wire connections (OPTIONAL):
  * - Inclusion button should be connected between digital pin 3 and GND  
@@ -36,7 +40,7 @@
  * 
  */
 // Enable debug prints to serial monitor
-#define MY_DEBUG
+//#define MY_DEBUG
 
 // Enable and select radio type attached
 #define MY_RADIO_NRF24
@@ -64,15 +68,18 @@
 // Enable Inclusion mode button on gateway
 #define MY_INCLUSION_BUTTON_FEATURE
 
+#define SKETCH_NAME "SGW nRF24 Add-on"
+#define SKETCH_VERSION "1.0.0"
+
 // Set inclusion mode duration (in seconds)
 #define MY_INCLUSION_MODE_DURATION 60 
 // Digital pin used for inclusion mode button
 #define MY_INCLUSION_MODE_BUTTON_PIN  3 
 
 // Uncomment to override default HW configurations
-#define MY_DEFAULT_ERR_LED_PIN 4  // Error led pin  (red)
-#define MY_DEFAULT_RX_LED_PIN  5  // Receive led pin (yellow)
-#define MY_DEFAULT_TX_LED_PIN  6  // Transfer led pin (green)
+#define MY_DEFAULT_ERR_LED_PIN 4  // Error led pin (red)
+#define MY_DEFAULT_TX_LED_PIN  5  // Transfer led pin (yellow)
+#define MY_DEFAULT_RX_LED_PIN  6  // Receive led pin (green)
 
 #include <SPI.h>
 #include <MySensors.h>  
@@ -82,7 +89,8 @@ void setup() {
 }
 
 void presentation() {
- // Present locally attached sensors 
+ // Send the sketch version information to the gateway and Controller
+  sendSketchInfo(SKETCH_NAME, SKETCH_VERSION); 
 }
 
 void loop() { 
