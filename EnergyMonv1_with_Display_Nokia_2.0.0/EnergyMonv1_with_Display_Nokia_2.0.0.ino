@@ -22,7 +22,7 @@ and MySensors 2.0
 // Enable repeater functionality for this node
 //#define MY_REPEATER_FEATURE
 
-#define MY_RF24_CHANNEL  70
+#define MY_RF24_CHANNEL  71
 
 // Connected we have to move CE/CSN pins for NRF radio
 #define MY_RF24_CE_PIN   7
