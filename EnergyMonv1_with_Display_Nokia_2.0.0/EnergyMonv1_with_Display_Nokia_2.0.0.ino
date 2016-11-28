@@ -14,7 +14,7 @@ and MySensors 2.0
 #define MY_RADIO_NRF24
 //#define MY_RADIO_RFM69
 
-#define MY_NODE_ID       30
+#define MY_NODE_ID       AUTO
 
 #define SKETCH_NAME "Energy Monitor v1.0"
 #define SKETCH_VERSION "2.0.0"
@@ -22,7 +22,7 @@ and MySensors 2.0
 // Enable repeater functionality for this node
 //#define MY_REPEATER_FEATURE
 
-#define MY_RF24_CHANNEL  AUTO
+#define MY_RF24_CHANNEL  70
 
 // Connected we have to move CE/CSN pins for NRF radio
 #define MY_RF24_CE_PIN   7
