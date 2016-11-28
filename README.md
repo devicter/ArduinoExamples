@@ -1,2 +1,2 @@
 # ArduinoExamples
-Arduino Examples for devDuino boards and Raspberry PI nFR24 Add-on
+Arduino Examples for devDuino boards, Shields and Raspberry PI nFR24 Add-on
