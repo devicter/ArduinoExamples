@@ -16,7 +16,7 @@ and MySensors 2.0.0
 
 #define MY_NODE_ID               AUTO
 
-#define MY_RF24_CHANNEL          50
+#define MY_RF24_CHANNEL          71
 
 // Connected we have to move CE/CSN pins for NRF radio
 #define MY_RF24_CE_PIN            8
