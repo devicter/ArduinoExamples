@@ -28,7 +28,6 @@ http://www.mysensors.org/hardware/micro
 #define MY_RF24_CS_PIN            7
 
 #include <MySensors.h>
-#include <SPI.h> 
 
 #define SKETCH_NAME "devDuino SNv1.3"
 #define SKETCH_VERSION "1.0.0"
