@@ -23,7 +23,6 @@ and MySensors 2.0.0
 #define MY_RF24_CS_PIN            7
 
 #include <MySensors.h>
-#include <SPI.h>
 #include "HTU21D.h"
 #include <Wire.h>
 #include <RunningAverage.h>
