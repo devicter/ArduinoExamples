@@ -27,7 +27,6 @@ and MySensors 2.0
 #define MY_RF24_CE_PIN   7
 #define MY_RF24_CS_PIN   8
 
-#include <SPI.h>
 #include <MySensors.h>
 #include "EmonLib.h"
 #include <Time.h>
