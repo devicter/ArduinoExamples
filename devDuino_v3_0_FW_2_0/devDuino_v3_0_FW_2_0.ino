@@ -27,7 +27,6 @@ http://www.mysensors.org/hardware/micro
 #define MY_RF24_CE_PIN            8
 #define MY_RF24_CS_PIN            7
 
-#include <SPI.h> 
 #include <MySensors.h>
 
 #define SKETCH_NAME "devDuino SNv3.0"
