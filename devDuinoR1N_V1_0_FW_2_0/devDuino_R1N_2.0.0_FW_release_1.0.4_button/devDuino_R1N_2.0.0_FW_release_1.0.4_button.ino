@@ -32,7 +32,7 @@ https://lowpowerlab.com/guide/moteino/
 
 #define MY_NODE_ID              AUTO
 
-#define MY_RF24_CHANNEL         10//70
+#define MY_RF24_CHANNEL         XXX
 
 // Enable to support OTA for this node (needs DualOptiBoot boot-loader to fully work)
 #define MY_OTA_FIRMWARE_FEATURE
