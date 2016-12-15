@@ -34,7 +34,7 @@ https://lowpowerlab.com/guide/moteino/
 // Enable repeater functionality for this node
 //#define MY_REPEATER_FEATURE
 
-#define MY_RF24_CHANNEL       10//70
+#define MY_RF24_CHANNEL       XXX
 
 // Enable to support OTA for this node (needs DualOptiBoot boot-loader to fully work)
 #define MY_OTA_FIRMWARE_FEATURE
