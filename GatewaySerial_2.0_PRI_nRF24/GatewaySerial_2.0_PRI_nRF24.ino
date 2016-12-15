@@ -45,11 +45,11 @@
 // Enable and select radio type attached
 #define MY_RADIO_NRF24
 
-#define MY_RF24_CHANNEL 71
+#define MY_RF24_CHANNEL XXX
 
 // Set LOW transmit power level as default, if you have an amplified NRF-module and
 // power your radio separately with a good regulator you can turn up PA level. 
-#define MY_RF24_PA_LEVEL RF24_PA_HIGH
+#define MY_RF24_PA_LEVEL RF24_PA_MAX
 
 // Enable serial gateway
 #define MY_GATEWAY_SERIAL
@@ -58,7 +58,7 @@
 #define MY_RF24_CS_PIN  9
 
 // Set blinking period
-#define MY_DEFAULT_LED_BLINK_PERIOD 200
+#define MY_DEFAULT_LED_BLINK_PERIOD 300
 
 // Inverses the behavior of leds
 #define MY_WITH_LEDS_BLINKING_INVERSE
@@ -81,7 +81,6 @@
 #define MY_DEFAULT_TX_LED_PIN  5  // Transfer led pin (yellow)
 #define MY_DEFAULT_RX_LED_PIN  6  // Receive led pin (green)
 
-#include <SPI.h>
 #include <MySensors.h>  
 
 void setup() { 
