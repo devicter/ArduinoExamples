@@ -21,7 +21,7 @@ http://www.mysensors.org/hardware/micro
 
 #define MY_NODE_ID               AUTO
 
-#define MY_RF24_CHANNEL          71
+#define MY_RF24_CHANNEL          XXX
 
 // Connected we have to move CE/CSN pins for NRF radio
 #define MY_RF24_CE_PIN            8
